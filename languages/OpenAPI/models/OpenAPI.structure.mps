@@ -79,6 +79,11 @@
       <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="XPcdgaujRl" resolve="RestResourceProperty" />
     </node>
+    <node concept="1TJgyi" id="XPcdgavZOK" role="1TKVEl">
+      <property role="IQ2nx" value="1113850170111425840" />
+      <property role="TrG5h" value="basePath" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="PlHQZ" id="XPcdgaub4U">
     <property role="TrG5h" value="RestType" />
@@ -129,7 +134,7 @@
       <property role="IQ2ns" value="1113850170111149239" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="url" />
-      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="XPcdgauWia" resolve="UrlPart" />
     </node>
     <node concept="1TJgyj" id="XPcdgauBH6" role="1TKVEi">
@@ -155,6 +160,12 @@
       <property role="IQ2nx" value="1113850170111149237" />
       <property role="TrG5h" value="method" />
       <ref role="AX2Wp" node="XPcdgauWil" resolve="RestOperationMethod" />
+    </node>
+    <node concept="1TJgyj" id="XPcdgavZVY" role="1TKVEi">
+      <property role="IQ2ns" value="1113850170111426302" />
+      <property role="20kJfa" value="forResource" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="XPcdgaub4Q" resolve="RestResource" />
     </node>
   </node>
   <node concept="1TIwiD" id="XPcdgaujRl">
@@ -194,6 +205,11 @@
     <property role="3GE5qa" value="operation" />
     <property role="TrG5h" value="RestOperationParameter" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="XPcdgavVi8" role="1TKVEl">
+      <property role="IQ2nx" value="1113850170111407240" />
+      <property role="TrG5h" value="place" />
+      <ref role="AX2Wp" node="XPcdgavV8l" resolve="RestOperationParameterPlace" />
+    </node>
     <node concept="1TJgyj" id="XPcdgauTks" role="1TKVEi">
       <property role="IQ2ns" value="1113850170111137052" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -263,6 +279,24 @@
     <node concept="25R33" id="XPcdgauWiz" role="25R1y">
       <property role="3tVfz5" value="1113850170111149219" />
       <property role="TrG5h" value="DELETE" />
+    </node>
+  </node>
+  <node concept="25R3W" id="XPcdgavV8l">
+    <property role="3F6X1D" value="1113850170111406613" />
+    <property role="3GE5qa" value="operation" />
+    <property role="TrG5h" value="RestOperationParameterPlace" />
+    <ref role="1H5jkz" node="XPcdgavV8m" resolve="QUERY" />
+    <node concept="25R33" id="XPcdgavV8m" role="25R1y">
+      <property role="3tVfz5" value="1113850170111406614" />
+      <property role="TrG5h" value="QUERY" />
+    </node>
+    <node concept="25R33" id="XPcdgavV8n" role="25R1y">
+      <property role="3tVfz5" value="1113850170111406615" />
+      <property role="TrG5h" value="PATH" />
+    </node>
+    <node concept="25R33" id="XPcdgavV8q" role="25R1y">
+      <property role="3tVfz5" value="1113850170111406618" />
+      <property role="TrG5h" value="HEADER" />
     </node>
   </node>
 </model>
