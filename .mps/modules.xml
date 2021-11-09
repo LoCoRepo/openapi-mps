@@ -4,6 +4,7 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/OpenAPI/OpenAPI.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/OpenAPI/sandbox/OpenAPI.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/OpenApiMps.build/OpenApiMps.build.msd" folder="" />
     </projectModules>
   </component>
 </project>
