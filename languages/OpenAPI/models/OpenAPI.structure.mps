@@ -62,6 +62,11 @@
     <property role="19KtqR" value="true" />
     <property role="3GE5qa" value="resource" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="XPcdgaw_Mu" role="1TKVEi">
+      <property role="IQ2ns" value="1113850170111581342" />
+      <property role="20kJfa" value="childOf" />
+      <ref role="20lvS9" node="XPcdgaub4Q" resolve="RestResource" />
+    </node>
     <node concept="PrWs8" id="XPcdgaub4R" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
