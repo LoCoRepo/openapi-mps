@@ -21,6 +21,7 @@
         <reference id="1113850170110982632" name="resource" index="530$W" />
       </concept>
       <concept id="1113850170110982638" name="OpenAPI.structure.RestOperation" flags="ng" index="530$U">
+        <child id="1113850170111149239" name="url" index="53Jhz" />
         <child id="1113850170111064902" name="request" index="53OIi" />
         <child id="1113850170111064909" name="response" index="53OIp" />
       </concept>
@@ -33,6 +34,9 @@
       </concept>
       <concept id="1113850170111110217" name="OpenAPI.structure.JavaType" flags="ng" index="53xMt">
         <child id="1113850170111110224" name="type" index="53xM4" />
+      </concept>
+      <concept id="1113850170111149195" name="OpenAPI.structure.ConstantUrlPart" flags="ng" index="53Jhv">
+        <property id="1113850170111149196" name="url" index="53Jho" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -63,6 +67,9 @@
   </node>
   <node concept="530$U" id="XPcdgaukqu">
     <property role="TrG5h" value="CreateUser" />
+    <node concept="53Jhv" id="XPcdgauWMu" role="53Jhz">
+      <property role="53Jho" value="/users" />
+    </node>
     <node concept="530$P" id="XPcdgauBZt" role="53OIi">
       <ref role="530$W" node="XPcdgaujBw" resolve="User" />
     </node>

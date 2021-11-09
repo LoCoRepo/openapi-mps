@@ -11,9 +11,20 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="3348158742936976480" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ng" index="25R33">
+        <property id="1421157252384165432" name="memberId" index="3tVfz5" />
+      </concept>
+      <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclaration" flags="ng" index="25R3W">
+        <reference id="1075010451642646892" name="defaultMember" index="1H5jkz" />
+        <child id="3348158742936976577" name="members" index="25R1y" />
+      </concept>
+      <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
+        <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
+        <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
       <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
@@ -23,6 +34,10 @@
         <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
+      </concept>
+      <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
+        <property id="241647608299431129" name="propertyId" index="IQ2nx" />
+        <reference id="1082985295845" name="dataType" index="AX2Wp" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
@@ -110,6 +125,13 @@
     <node concept="PrWs8" id="XPcdgaujBJ" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="1TJgyj" id="XPcdgauWiR" role="1TKVEi">
+      <property role="IQ2ns" value="1113850170111149239" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="url" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" node="XPcdgauWia" resolve="UrlPart" />
+    </node>
     <node concept="1TJgyj" id="XPcdgauBH6" role="1TKVEi">
       <property role="IQ2ns" value="1113850170111064902" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -125,9 +147,14 @@
     <node concept="1TJgyj" id="XPcdgauTlm" role="1TKVEi">
       <property role="IQ2ns" value="1113850170111137110" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="paraters" />
+      <property role="20kJfa" value="parameters" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="XPcdgauTkp" resolve="RestOperationParameter" />
+    </node>
+    <node concept="1TJgyi" id="XPcdgauWiP" role="1TKVEl">
+      <property role="IQ2nx" value="1113850170111149237" />
+      <property role="TrG5h" value="method" />
+      <ref role="AX2Wp" node="XPcdgauWil" resolve="RestOperationMethod" />
     </node>
   </node>
   <node concept="1TIwiD" id="XPcdgaujRl">
@@ -176,6 +203,66 @@
     </node>
     <node concept="PrWs8" id="XPcdgauTkq" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="XPcdgauWia">
+    <property role="EcuMT" value="1113850170111149194" />
+    <property role="3GE5qa" value="operation" />
+    <property role="TrG5h" value="UrlPart" />
+  </node>
+  <node concept="1TIwiD" id="XPcdgauWib">
+    <property role="EcuMT" value="1113850170111149195" />
+    <property role="3GE5qa" value="operation" />
+    <property role="TrG5h" value="ConstantUrlPart" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="XPcdgauWic" role="1TKVEl">
+      <property role="IQ2nx" value="1113850170111149196" />
+      <property role="TrG5h" value="url" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="XPcdgauWih" role="PzmwI">
+      <ref role="PrY4T" node="XPcdgauWia" resolve="UrlPart" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="XPcdgauWie">
+    <property role="EcuMT" value="1113850170111149198" />
+    <property role="3GE5qa" value="operation" />
+    <property role="TrG5h" value="PathParamUrlPart" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="XPcdgauWij" role="1TKVEi">
+      <property role="IQ2ns" value="1113850170111149203" />
+      <property role="20kJfa" value="param" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="XPcdgauTkp" resolve="RestOperationParameter" />
+    </node>
+    <node concept="PrWs8" id="XPcdgauWif" role="PzmwI">
+      <ref role="PrY4T" node="XPcdgauWia" resolve="UrlPart" />
+    </node>
+  </node>
+  <node concept="25R3W" id="XPcdgauWil">
+    <property role="3F6X1D" value="1113850170111149205" />
+    <property role="3GE5qa" value="operation" />
+    <property role="TrG5h" value="RestOperationMethod" />
+    <ref role="1H5jkz" node="XPcdgauWim" resolve="POST" />
+    <node concept="25R33" id="XPcdgauWim" role="25R1y">
+      <property role="3tVfz5" value="1113850170111149206" />
+      <property role="TrG5h" value="POST" />
+    </node>
+    <node concept="25R33" id="XPcdgauWin" role="25R1y">
+      <property role="3tVfz5" value="1113850170111149207" />
+      <property role="TrG5h" value="GET" />
+    </node>
+    <node concept="25R33" id="XPcdgauWiq" role="25R1y">
+      <property role="3tVfz5" value="1113850170111149210" />
+      <property role="TrG5h" value="PUT" />
+    </node>
+    <node concept="25R33" id="XPcdgauWiu" role="25R1y">
+      <property role="3tVfz5" value="1113850170111149214" />
+      <property role="TrG5h" value="PATCH" />
+    </node>
+    <node concept="25R33" id="XPcdgauWiz" role="25R1y">
+      <property role="3tVfz5" value="1113850170111149219" />
+      <property role="TrG5h" value="DELETE" />
     </node>
   </node>
 </model>
