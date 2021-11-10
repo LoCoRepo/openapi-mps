@@ -50,6 +50,7 @@
       <concept id="1113850170111149198" name="OpenAPI.structure.PathParamUrlPart" flags="ng" index="53Jhq">
         <reference id="1113850170111149203" name="param" index="53Jh7" />
       </concept>
+      <concept id="1307353188182883845" name="OpenAPI.structure.Spec" flags="ng" index="1rItz9" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -200,6 +201,9 @@
     <node concept="53Jhq" id="XPcdgax7u0" role="53Jhz">
       <ref role="53Jh7" node="XPcdgax7tU" resolve="id" />
     </node>
+  </node>
+  <node concept="1rItz9" id="5zlggQOlg0I">
+    <property role="TrG5h" value="user-api" />
   </node>
 </model>
 

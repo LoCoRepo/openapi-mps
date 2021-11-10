@@ -304,5 +304,15 @@
       <property role="TrG5h" value="HEADER" />
     </node>
   </node>
+  <node concept="1TIwiD" id="18$DGL9BnS5">
+    <property role="EcuMT" value="1307353188182883845" />
+    <property role="3GE5qa" value="resource" />
+    <property role="TrG5h" value="Spec" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="18$DGL9BnS6" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
 </model>
 
