@@ -116,6 +116,9 @@
     <node concept="530$P" id="XPcdgavtSL" role="53OIi">
       <ref role="530$W" node="XPcdgaujBw" resolve="User" />
     </node>
+    <node concept="530$P" id="7fEMZkWncrV" role="53OIp">
+      <ref role="530$W" node="XPcdgaujBw" resolve="User" />
+    </node>
   </node>
   <node concept="530$U" id="XPcdgavzJh">
     <property role="TrG5h" value="GetUserById" />
@@ -173,6 +176,11 @@
     <node concept="530$P" id="XPcdgawJnm" role="53OIi">
       <ref role="530$W" node="XPcdgawJmW" resolve="UserRole" />
     </node>
+    <node concept="53xMt" id="7fEMZkWncs0" role="53OIp">
+      <node concept="3uibUv" id="7fEMZkWncs4" role="53xM4">
+        <ref role="3uigEE" to="33ny:~UUID" resolve="UUID" />
+      </node>
+    </node>
   </node>
   <node concept="530$U" id="XPcdgax7tL">
     <property role="3GE5qa" value="userrole" />
@@ -202,8 +210,11 @@
     <node concept="53Jhq" id="XPcdgax7u0" role="53Jhz">
       <ref role="53Jh7" node="XPcdgax7tU" resolve="id" />
     </node>
+    <node concept="530$P" id="7fEMZkWncs7" role="53OIp">
+      <ref role="530$W" node="XPcdgaujBw" resolve="User" />
+    </node>
   </node>
-  <node concept="1rItz9" id="5zlggQOlg0I">
+  <node concept="1rItz9" id="7fEMZkWlfb6">
     <property role="TrG5h" value="user-api" />
   </node>
 </model>
