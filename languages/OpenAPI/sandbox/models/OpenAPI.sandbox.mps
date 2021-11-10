@@ -37,6 +37,9 @@
         <child id="1113850170110984747" name="properties" index="537bZ" />
         <child id="1113850170111121122" name="idType" index="53AoQ" />
       </concept>
+      <concept id="1113850170110947641" name="OpenAPI.structure.RestType" flags="ng" index="53o7H">
+        <property id="8352712713052804775" name="nullable" index="1fz1Pi" />
+      </concept>
       <concept id="1113850170110947643" name="OpenAPI.structure.ArrayType" flags="ng" index="53o7J">
         <child id="1113850170111066099" name="generic" index="53OWB" />
       </concept>
@@ -68,13 +71,15 @@
     <node concept="530O1" id="XPcdgauPr4" role="537bZ">
       <property role="TrG5h" value="firstName" />
       <node concept="53xMt" id="XPcdgauPrd" role="530Oc">
+        <property role="1fz1Pi" value="true" />
         <node concept="17QB3L" id="XPcdgauPrj" role="53xM4" />
       </node>
     </node>
     <node concept="530O1" id="XPcdgauPrp" role="537bZ">
       <property role="TrG5h" value="lastName" />
       <node concept="53xMt" id="XPcdgauPrq" role="530Oc">
-        <node concept="17QB3L" id="XPcdgauPrr" role="53xM4" />
+        <property role="1fz1Pi" value="true" />
+        <node concept="17QB3L" id="7fEMZkWsd_x" role="53xM4" />
       </node>
     </node>
     <node concept="53xMt" id="XPcdgawv9C" role="53AoQ">
