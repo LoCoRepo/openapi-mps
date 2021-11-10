@@ -94,6 +94,11 @@
     <property role="TrG5h" value="RestType" />
     <property role="EcuMT" value="1113850170110947641" />
     <property role="3GE5qa" value="type" />
+    <node concept="1TJgyi" id="7fEMZkWpHqB" role="1TKVEl">
+      <property role="IQ2nx" value="8352712713052804775" />
+      <property role="TrG5h" value="nullable" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="1TIwiD" id="XPcdgaub4V">
     <property role="EcuMT" value="1113850170110947643" />
