@@ -1,9 +1,12 @@
 # openapi-mps
-A MPS Language for OpenAPI. This language could be used to express REST integration specification, and in the end it will be translated to an OpenAPI spec file.
+A MPS Language for OpenAPI. This language could be used to express REST integration specification, and in the end it
+will be translated to an OpenAPI spec file (for now!).
 
 ## Installation
-Assuming you have [downloaded Jetbrains MPS](https://www.jetbrains.com/mps/download/) and installed, you can download latest version of this project which is
-a zip file. Then go to the Settings menu on MPS and click on "Plugins"
+Assuming you have downloaded and installed Jetbrains MPS 2020.3 from 
+[here](https://www.jetbrains.com/mps/download/previous.html)
+, you can [download](https://github.com/LoCoRepo/openapi-mps/releases) latest version of this project which is a zip
+file. Then go to the Settings menu on MPS and click on "Plugins"
 ![Plugins](./docs/Plugins-Menu.png)
 
 Then click on the <img src="./docs/gears.png" alt="gears icon" width="15"/> and select "Install Plugin from Disk" option
