@@ -8,6 +8,7 @@
   </languages>
   <imports>
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="28m1" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.time(JDK/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -80,6 +81,22 @@
       <node concept="53xMt" id="XPcdgauPrq" role="530Oc">
         <property role="1fz1Pi" value="true" />
         <node concept="17QB3L" id="7fEMZkWsd_x" role="53xM4" />
+      </node>
+    </node>
+    <node concept="530O1" id="5kRCVqpMM8_" role="537bZ">
+      <property role="TrG5h" value="birthDate" />
+      <node concept="53xMt" id="5kRCVqpMM8J" role="530Oc">
+        <node concept="3uibUv" id="5kRCVqpMM8P" role="53xM4">
+          <ref role="3uigEE" to="28m1:~LocalDate" resolve="LocalDate" />
+        </node>
+      </node>
+    </node>
+    <node concept="530O1" id="5kRCVqpMM8S" role="537bZ">
+      <property role="TrG5h" value="deathDate" />
+      <node concept="53xMt" id="5kRCVqpMM95" role="530Oc">
+        <node concept="3uibUv" id="5kRCVqpMM9b" role="53xM4">
+          <ref role="3uigEE" to="28m1:~LocalDateTime" resolve="LocalDateTime" />
+        </node>
       </node>
     </node>
     <node concept="53xMt" id="XPcdgawv9C" role="53AoQ">
