@@ -232,12 +232,36 @@
     <node concept="53Jhq" id="XPcdgax7u0" role="53Jhz">
       <ref role="53Jh7" node="XPcdgax7tU" resolve="id" />
     </node>
-    <node concept="530$P" id="7fEMZkWncs7" role="53OIp">
-      <ref role="530$W" node="XPcdgaujBw" resolve="User" />
+    <node concept="530$P" id="h7VoSMCDXP" role="53OIp">
+      <ref role="530$W" node="XPcdgawJmW" resolve="UserRole" />
     </node>
   </node>
   <node concept="1rItz9" id="7fEMZkWlfb6">
     <property role="TrG5h" value="user-api" />
+  </node>
+  <node concept="530$U" id="h7VoSMDjDM">
+    <property role="3GE5qa" value="userrole" />
+    <property role="TrG5h" value="UpdateUserRole" />
+    <property role="53Jhx" value="XPcdgauWiq/PUT" />
+    <ref role="52GSE" node="XPcdgawJmW" resolve="UserRole" />
+    <node concept="530$P" id="h7VoSMDjDW" role="53OIp">
+      <ref role="530$W" node="XPcdgawJmW" resolve="UserRole" />
+    </node>
+    <node concept="53End" id="h7VoSMDjDO" role="53Em2">
+      <property role="TrG5h" value="id" />
+      <property role="52Chs" value="XPcdgavV8n/PATH" />
+      <node concept="53xMt" id="h7VoSMDjDP" role="53En8">
+        <node concept="3uibUv" id="h7VoSMDjDQ" role="53xM4">
+          <ref role="3uigEE" to="33ny:~UUID" resolve="UUID" />
+        </node>
+      </node>
+    </node>
+    <node concept="53Jhq" id="h7VoSMDjDU" role="53Jhz">
+      <ref role="53Jh7" node="h7VoSMDjDO" resolve="id" />
+    </node>
+    <node concept="530$P" id="h7VoSMDjDZ" role="53OIi">
+      <ref role="530$W" node="XPcdgawJmW" resolve="UserRole" />
+    </node>
   </node>
 </model>
 
