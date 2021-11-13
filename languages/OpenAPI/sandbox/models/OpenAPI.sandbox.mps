@@ -54,6 +54,9 @@
       <concept id="1113850170111149198" name="OpenAPI.structure.PathParamUrlPart" flags="ng" index="53Jhq">
         <reference id="1113850170111149203" name="param" index="53Jh7" />
       </concept>
+      <concept id="1113850170111149195" name="OpenAPI.structure.ConstantUrlPart" flags="ng" index="53Jhv">
+        <property id="1113850170111149196" name="url" index="53Jho" />
+      </concept>
       <concept id="1307353188182883845" name="OpenAPI.structure.Spec" flags="ng" index="1rItz9" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -72,7 +75,6 @@
     <node concept="530O1" id="XPcdgauPr4" role="537bZ">
       <property role="TrG5h" value="firstName" />
       <node concept="53xMt" id="XPcdgauPrd" role="530Oc">
-        <property role="1fz1Pi" value="true" />
         <node concept="17QB3L" id="XPcdgauPrj" role="53xM4" />
       </node>
     </node>
@@ -86,6 +88,7 @@
     <node concept="530O1" id="5kRCVqpMM8_" role="537bZ">
       <property role="TrG5h" value="birthDate" />
       <node concept="53xMt" id="5kRCVqpMM8J" role="530Oc">
+        <property role="1fz1Pi" value="true" />
         <node concept="3uibUv" id="5kRCVqpMM8P" role="53xM4">
           <ref role="3uigEE" to="28m1:~LocalDate" resolve="LocalDate" />
         </node>
@@ -279,96 +282,6 @@
       </node>
     </node>
   </node>
-  <node concept="530$U" id="2quAIaQCGeP">
-    <property role="TrG5h" value="CreateRole" />
-    <property role="3GE5qa" value="role" />
-    <ref role="52GSE" node="2quAIaQAreO" resolve="Role" />
-    <node concept="530$P" id="2quAIaQCGeQ" role="53OIi">
-      <ref role="530$W" node="2quAIaQAreO" resolve="Role" />
-    </node>
-    <node concept="53xMt" id="2quAIaQCGeR" role="53OIp">
-      <node concept="3uibUv" id="2quAIaQCGeS" role="53xM4">
-        <ref role="3uigEE" to="33ny:~UUID" resolve="UUID" />
-      </node>
-    </node>
-  </node>
-  <node concept="530$U" id="2quAIaQCGf0">
-    <property role="TrG5h" value="UpdateRole" />
-    <property role="53Jhx" value="XPcdgauWiq/PUT" />
-    <property role="3GE5qa" value="role" />
-    <ref role="52GSE" node="2quAIaQAreO" resolve="Role" />
-    <node concept="530$P" id="2quAIaQCGf1" role="53OIi">
-      <ref role="530$W" node="2quAIaQAreO" resolve="Role" />
-    </node>
-    <node concept="530$P" id="2quAIaQCGf2" role="53OIp">
-      <ref role="530$W" node="2quAIaQAreO" resolve="Role" />
-    </node>
-    <node concept="53End" id="2quAIaQCGf3" role="53Em2">
-      <property role="52Chs" value="XPcdgavV8n/PATH" />
-      <property role="TrG5h" value="id" />
-      <node concept="53xMt" id="2quAIaQCGf4" role="53En8">
-        <node concept="3uibUv" id="2quAIaQCGf5" role="53xM4">
-          <ref role="3uigEE" to="33ny:~UUID" resolve="UUID" />
-        </node>
-      </node>
-    </node>
-    <node concept="53Jhq" id="2quAIaQCGf6" role="53Jhz">
-      <ref role="53Jh7" node="2quAIaQCGf3" resolve="id" />
-    </node>
-  </node>
-  <node concept="530$U" id="2quAIaQCGfa">
-    <property role="TrG5h" value="ListRole" />
-    <property role="53Jhx" value="XPcdgauWin/GET" />
-    <property role="3GE5qa" value="role" />
-    <ref role="52GSE" node="2quAIaQAreO" resolve="Role" />
-    <node concept="53o7J" id="2quAIaQCGfb" role="53OIp">
-      <node concept="530$P" id="2quAIaQCGfc" role="53OWB">
-        <ref role="530$W" node="2quAIaQAreO" resolve="Role" />
-      </node>
-    </node>
-  </node>
-  <node concept="530$U" id="2quAIaQCGfj">
-    <property role="TrG5h" value="FindRoleById" />
-    <property role="53Jhx" value="XPcdgauWin/GET" />
-    <property role="3GE5qa" value="role" />
-    <ref role="52GSE" node="2quAIaQAreO" resolve="Role" />
-    <node concept="530$P" id="2quAIaQCGfk" role="53OIp">
-      <ref role="530$W" node="2quAIaQAreO" resolve="Role" />
-    </node>
-    <node concept="53End" id="2quAIaQCGfl" role="53Em2">
-      <property role="52Chs" value="XPcdgavV8n/PATH" />
-      <property role="TrG5h" value="id" />
-      <node concept="53xMt" id="2quAIaQCGfm" role="53En8">
-        <node concept="3uibUv" id="2quAIaQCGfn" role="53xM4">
-          <ref role="3uigEE" to="33ny:~UUID" resolve="UUID" />
-        </node>
-      </node>
-    </node>
-    <node concept="53Jhq" id="2quAIaQCGfo" role="53Jhz">
-      <ref role="53Jh7" node="2quAIaQCGfl" resolve="id" />
-    </node>
-  </node>
-  <node concept="530$U" id="2quAIaQCIUu">
-    <property role="TrG5h" value="DeleteRoleById" />
-    <property role="53Jhx" value="XPcdgauWiz/DELETE" />
-    <property role="3GE5qa" value="role" />
-    <ref role="52GSE" node="2quAIaQAreO" resolve="Role" />
-    <node concept="530$P" id="2quAIaQCIUv" role="53OIp">
-      <ref role="530$W" node="2quAIaQAreO" resolve="Role" />
-    </node>
-    <node concept="53End" id="2quAIaQCIUw" role="53Em2">
-      <property role="52Chs" value="XPcdgavV8n/PATH" />
-      <property role="TrG5h" value="id" />
-      <node concept="53xMt" id="2quAIaQCIUx" role="53En8">
-        <node concept="3uibUv" id="2quAIaQCIUy" role="53xM4">
-          <ref role="3uigEE" to="33ny:~UUID" resolve="UUID" />
-        </node>
-      </node>
-    </node>
-    <node concept="53Jhq" id="2quAIaQCIUz" role="53Jhz">
-      <ref role="53Jh7" node="2quAIaQCIUw" resolve="id" />
-    </node>
-  </node>
   <node concept="530$U" id="2quAIaQCIVG">
     <property role="TrG5h" value="FindUserRoleById" />
     <property role="53Jhx" value="XPcdgauWin/GET" />
@@ -409,6 +322,113 @@
     </node>
     <node concept="53Jhq" id="2quAIaQCMVV" role="53Jhz">
       <ref role="53Jh7" node="2quAIaQCMVS" resolve="id" />
+    </node>
+  </node>
+  <node concept="530$U" id="6Z0bLatiGD$">
+    <property role="3GE5qa" value="user" />
+    <property role="TrG5h" value="SearchUsers" />
+    <property role="53Jhx" value="XPcdgauWin/GET" />
+    <ref role="52GSE" node="XPcdgaujBw" resolve="User" />
+    <node concept="53o7J" id="6Z0bLatiGDE" role="53OIp">
+      <node concept="530$P" id="6Z0bLatiGDJ" role="53OWB">
+        <ref role="530$W" node="XPcdgaujBw" resolve="User" />
+      </node>
+    </node>
+    <node concept="53Jhv" id="6Z0bLatiGDA" role="53Jhz">
+      <property role="53Jho" value="search" />
+    </node>
+    <node concept="530$P" id="6Z0bLatiGDC" role="53OIi">
+      <ref role="530$W" node="XPcdgaujBw" resolve="User" />
+    </node>
+  </node>
+  <node concept="530$U" id="6Z0bLatiGDQ">
+    <property role="TrG5h" value="CreateRole" />
+    <property role="3GE5qa" value="role" />
+    <ref role="52GSE" node="2quAIaQAreO" resolve="Role" />
+    <node concept="530$P" id="6Z0bLatiGDR" role="53OIi">
+      <ref role="530$W" node="2quAIaQAreO" resolve="Role" />
+    </node>
+    <node concept="53xMt" id="6Z0bLatiGDS" role="53OIp">
+      <node concept="3uibUv" id="6Z0bLatiGDT" role="53xM4">
+        <ref role="3uigEE" to="33ny:~UUID" resolve="UUID" />
+      </node>
+    </node>
+  </node>
+  <node concept="530$U" id="6Z0bLatiGE1">
+    <property role="TrG5h" value="UpdateRole" />
+    <property role="53Jhx" value="XPcdgauWiq/PUT" />
+    <property role="3GE5qa" value="role" />
+    <ref role="52GSE" node="2quAIaQAreO" resolve="Role" />
+    <node concept="530$P" id="6Z0bLatiGE2" role="53OIi">
+      <ref role="530$W" node="2quAIaQAreO" resolve="Role" />
+    </node>
+    <node concept="530$P" id="6Z0bLatiGE3" role="53OIp">
+      <ref role="530$W" node="2quAIaQAreO" resolve="Role" />
+    </node>
+    <node concept="53End" id="6Z0bLatiGE4" role="53Em2">
+      <property role="52Chs" value="XPcdgavV8n/PATH" />
+      <property role="TrG5h" value="id" />
+      <node concept="53xMt" id="6Z0bLatiGE5" role="53En8">
+        <node concept="3uibUv" id="6Z0bLatiGE6" role="53xM4">
+          <ref role="3uigEE" to="33ny:~UUID" resolve="UUID" />
+        </node>
+      </node>
+    </node>
+    <node concept="53Jhq" id="6Z0bLatiGE7" role="53Jhz">
+      <ref role="53Jh7" node="6Z0bLatiGE4" resolve="id" />
+    </node>
+  </node>
+  <node concept="530$U" id="6Z0bLatiGEb">
+    <property role="TrG5h" value="ListRole" />
+    <property role="53Jhx" value="XPcdgauWin/GET" />
+    <property role="3GE5qa" value="role" />
+    <ref role="52GSE" node="2quAIaQAreO" resolve="Role" />
+    <node concept="53o7J" id="6Z0bLatiGEc" role="53OIp">
+      <node concept="530$P" id="6Z0bLatiGEd" role="53OWB">
+        <ref role="530$W" node="2quAIaQAreO" resolve="Role" />
+      </node>
+    </node>
+  </node>
+  <node concept="530$U" id="6Z0bLatiGEk">
+    <property role="TrG5h" value="FindRoleById" />
+    <property role="53Jhx" value="XPcdgauWin/GET" />
+    <property role="3GE5qa" value="role" />
+    <ref role="52GSE" node="2quAIaQAreO" resolve="Role" />
+    <node concept="530$P" id="6Z0bLatiGEl" role="53OIp">
+      <ref role="530$W" node="2quAIaQAreO" resolve="Role" />
+    </node>
+    <node concept="53End" id="6Z0bLatiGEm" role="53Em2">
+      <property role="52Chs" value="XPcdgavV8n/PATH" />
+      <property role="TrG5h" value="id" />
+      <node concept="53xMt" id="6Z0bLatiGEn" role="53En8">
+        <node concept="3uibUv" id="6Z0bLatiGEo" role="53xM4">
+          <ref role="3uigEE" to="33ny:~UUID" resolve="UUID" />
+        </node>
+      </node>
+    </node>
+    <node concept="53Jhq" id="6Z0bLatiGEp" role="53Jhz">
+      <ref role="53Jh7" node="6Z0bLatiGEm" resolve="id" />
+    </node>
+  </node>
+  <node concept="530$U" id="6Z0bLatiGEw">
+    <property role="TrG5h" value="DeleteRoleById" />
+    <property role="53Jhx" value="XPcdgauWiz/DELETE" />
+    <property role="3GE5qa" value="role" />
+    <ref role="52GSE" node="2quAIaQAreO" resolve="Role" />
+    <node concept="530$P" id="6Z0bLatiGEx" role="53OIp">
+      <ref role="530$W" node="2quAIaQAreO" resolve="Role" />
+    </node>
+    <node concept="53End" id="6Z0bLatiGEy" role="53Em2">
+      <property role="52Chs" value="XPcdgavV8n/PATH" />
+      <property role="TrG5h" value="id" />
+      <node concept="53xMt" id="6Z0bLatiGEz" role="53En8">
+        <node concept="3uibUv" id="6Z0bLatiGE$" role="53xM4">
+          <ref role="3uigEE" to="33ny:~UUID" resolve="UUID" />
+        </node>
+      </node>
+    </node>
+    <node concept="53Jhq" id="6Z0bLatiGE_" role="53Jhz">
+      <ref role="53Jh7" node="6Z0bLatiGEy" resolve="id" />
     </node>
   </node>
 </model>
