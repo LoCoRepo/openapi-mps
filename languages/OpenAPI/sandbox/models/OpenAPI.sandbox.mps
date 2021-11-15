@@ -54,9 +54,6 @@
       <concept id="1113850170111149198" name="OpenAPI.structure.PathParamUrlPart" flags="ng" index="53Jhq">
         <reference id="1113850170111149203" name="param" index="53Jh7" />
       </concept>
-      <concept id="1113850170111149195" name="OpenAPI.structure.ConstantUrlPart" flags="ng" index="53Jhv">
-        <property id="1113850170111149196" name="url" index="53Jho" />
-      </concept>
       <concept id="1307353188182883845" name="OpenAPI.structure.Spec" flags="ng" index="1rItz9" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -105,75 +102,6 @@
     <node concept="53xMt" id="XPcdgawv9C" role="53AoQ">
       <node concept="3uibUv" id="XPcdgawv9G" role="53xM4">
         <ref role="3uigEE" to="33ny:~UUID" resolve="UUID" />
-      </node>
-    </node>
-  </node>
-  <node concept="530$U" id="XPcdgaukqu">
-    <property role="TrG5h" value="CreateUser" />
-    <property role="3GE5qa" value="user" />
-    <ref role="52GSE" node="XPcdgaujBw" resolve="User" />
-    <node concept="530$P" id="XPcdgauBZt" role="53OIi">
-      <ref role="530$W" node="XPcdgaujBw" resolve="User" />
-    </node>
-    <node concept="53xMt" id="XPcdgauTkc" role="53OIp">
-      <node concept="3uibUv" id="XPcdgauTkg" role="53xM4">
-        <ref role="3uigEE" to="33ny:~UUID" resolve="UUID" />
-      </node>
-    </node>
-  </node>
-  <node concept="530$U" id="XPcdgavtSG">
-    <property role="TrG5h" value="UpdateUser" />
-    <property role="3GE5qa" value="user" />
-    <property role="53Jhx" value="XPcdgauWiq/PUT" />
-    <ref role="52GSE" node="XPcdgaujBw" resolve="User" />
-    <node concept="53End" id="XPcdgavtSN" role="53Em2">
-      <property role="TrG5h" value="id" />
-      <property role="52Chs" value="XPcdgavV8n/PATH" />
-      <node concept="53xMt" id="XPcdgavtSO" role="53En8">
-        <node concept="3uibUv" id="XPcdgavtST" role="53xM4">
-          <ref role="3uigEE" to="33ny:~UUID" resolve="UUID" />
-        </node>
-      </node>
-    </node>
-    <node concept="53Jhq" id="XPcdgavzJd" role="53Jhz">
-      <ref role="53Jh7" node="XPcdgavtSN" resolve="id" />
-    </node>
-    <node concept="530$P" id="XPcdgavtSL" role="53OIi">
-      <ref role="530$W" node="XPcdgaujBw" resolve="User" />
-    </node>
-    <node concept="530$P" id="7fEMZkWncrV" role="53OIp">
-      <ref role="530$W" node="XPcdgaujBw" resolve="User" />
-    </node>
-  </node>
-  <node concept="530$U" id="XPcdgavzJh">
-    <property role="TrG5h" value="GetUserById" />
-    <property role="3GE5qa" value="user" />
-    <property role="53Jhx" value="XPcdgauWin/GET" />
-    <ref role="52GSE" node="XPcdgaujBw" resolve="User" />
-    <node concept="530$P" id="XPcdgawh8n" role="53OIp">
-      <ref role="530$W" node="XPcdgaujBw" resolve="User" />
-    </node>
-    <node concept="53End" id="XPcdgawx$l" role="53Em2">
-      <property role="TrG5h" value="id" />
-      <property role="52Chs" value="XPcdgavV8n/PATH" />
-      <node concept="53xMt" id="XPcdgawx$m" role="53En8">
-        <node concept="3uibUv" id="XPcdgawx$n" role="53xM4">
-          <ref role="3uigEE" to="33ny:~UUID" resolve="UUID" />
-        </node>
-      </node>
-    </node>
-    <node concept="53Jhq" id="XPcdgawx$r" role="53Jhz">
-      <ref role="53Jh7" node="XPcdgawx$l" resolve="id" />
-    </node>
-  </node>
-  <node concept="530$U" id="XPcdgawh8p">
-    <property role="TrG5h" value="ListUsers" />
-    <property role="53Jhx" value="XPcdgauWin/GET" />
-    <property role="3GE5qa" value="user" />
-    <ref role="52GSE" node="XPcdgaujBw" resolve="User" />
-    <node concept="53o7J" id="XPcdgawh8q" role="53OIp">
-      <node concept="530$P" id="XPcdgawh8u" role="53OWB">
-        <ref role="530$W" node="XPcdgaujBw" resolve="User" />
       </node>
     </node>
   </node>
@@ -303,44 +231,6 @@
       <ref role="53Jh7" node="2quAIaQCIVI" resolve="id" />
     </node>
   </node>
-  <node concept="530$U" id="2quAIaQCMVQ">
-    <property role="TrG5h" value="DeleteUserById" />
-    <property role="53Jhx" value="XPcdgauWiz/DELETE" />
-    <property role="3GE5qa" value="user" />
-    <ref role="52GSE" node="XPcdgaujBw" resolve="User" />
-    <node concept="530$P" id="2quAIaQCMVR" role="53OIp">
-      <ref role="530$W" node="XPcdgaujBw" resolve="User" />
-    </node>
-    <node concept="53End" id="2quAIaQCMVS" role="53Em2">
-      <property role="52Chs" value="XPcdgavV8n/PATH" />
-      <property role="TrG5h" value="id" />
-      <node concept="53xMt" id="2quAIaQCMVT" role="53En8">
-        <node concept="3uibUv" id="2quAIaQCMVU" role="53xM4">
-          <ref role="3uigEE" to="33ny:~UUID" resolve="UUID" />
-        </node>
-      </node>
-    </node>
-    <node concept="53Jhq" id="2quAIaQCMVV" role="53Jhz">
-      <ref role="53Jh7" node="2quAIaQCMVS" resolve="id" />
-    </node>
-  </node>
-  <node concept="530$U" id="6Z0bLatiGD$">
-    <property role="3GE5qa" value="user" />
-    <property role="TrG5h" value="SearchUsers" />
-    <property role="53Jhx" value="XPcdgauWin/GET" />
-    <ref role="52GSE" node="XPcdgaujBw" resolve="User" />
-    <node concept="53o7J" id="6Z0bLatiGDE" role="53OIp">
-      <node concept="530$P" id="6Z0bLatiGDJ" role="53OWB">
-        <ref role="530$W" node="XPcdgaujBw" resolve="User" />
-      </node>
-    </node>
-    <node concept="53Jhv" id="6Z0bLatiGDA" role="53Jhz">
-      <property role="53Jho" value="search" />
-    </node>
-    <node concept="530$P" id="6Z0bLatiGDC" role="53OIi">
-      <ref role="530$W" node="XPcdgaujBw" resolve="User" />
-    </node>
-  </node>
   <node concept="530$U" id="6Z0bLatiGDQ">
     <property role="TrG5h" value="CreateRole" />
     <property role="3GE5qa" value="role" />
@@ -429,6 +319,90 @@
     </node>
     <node concept="53Jhq" id="6Z0bLatiGE_" role="53Jhz">
       <ref role="53Jh7" node="6Z0bLatiGEy" resolve="id" />
+    </node>
+  </node>
+  <node concept="530$U" id="10s9KSwXyVW">
+    <property role="TrG5h" value="CreateUser" />
+    <property role="3GE5qa" value="user" />
+    <ref role="52GSE" node="XPcdgaujBw" resolve="User" />
+    <node concept="530$P" id="10s9KSwXyVX" role="53OIi">
+      <ref role="530$W" node="XPcdgaujBw" resolve="User" />
+    </node>
+    <node concept="53xMt" id="10s9KSwXyVY" role="53OIp">
+      <node concept="3uibUv" id="10s9KSwXyVZ" role="53xM4">
+        <ref role="3uigEE" to="33ny:~UUID" resolve="UUID" />
+      </node>
+    </node>
+  </node>
+  <node concept="530$U" id="10s9KSwXyW6">
+    <property role="TrG5h" value="UpdateUser" />
+    <property role="53Jhx" value="XPcdgauWiq/PUT" />
+    <property role="3GE5qa" value="user" />
+    <ref role="52GSE" node="XPcdgaujBw" resolve="User" />
+    <node concept="530$P" id="10s9KSwXyW7" role="53OIi">
+      <ref role="530$W" node="XPcdgaujBw" resolve="User" />
+    </node>
+    <node concept="53End" id="10s9KSwXyW8" role="53Em2">
+      <property role="52Chs" value="XPcdgavV8n/PATH" />
+      <property role="TrG5h" value="id" />
+      <node concept="53xMt" id="10s9KSwXyW9" role="53En8">
+        <node concept="3uibUv" id="10s9KSwXyWa" role="53xM4">
+          <ref role="3uigEE" to="33ny:~UUID" resolve="UUID" />
+        </node>
+      </node>
+    </node>
+    <node concept="53Jhq" id="10s9KSwXyWb" role="53Jhz">
+      <ref role="53Jh7" node="10s9KSwXyW8" resolve="id" />
+    </node>
+  </node>
+  <node concept="530$U" id="10s9KSwXyWf">
+    <property role="TrG5h" value="ListUser" />
+    <property role="53Jhx" value="XPcdgauWin/GET" />
+    <property role="3GE5qa" value="user" />
+    <ref role="52GSE" node="XPcdgaujBw" resolve="User" />
+    <node concept="53o7J" id="10s9KSwXyWg" role="53OIp">
+      <node concept="530$P" id="10s9KSwXyWh" role="53OWB">
+        <ref role="530$W" node="XPcdgaujBw" resolve="User" />
+      </node>
+    </node>
+  </node>
+  <node concept="530$U" id="10s9KSwXyWo">
+    <property role="TrG5h" value="FindUserById" />
+    <property role="53Jhx" value="XPcdgauWin/GET" />
+    <property role="3GE5qa" value="user" />
+    <ref role="52GSE" node="XPcdgaujBw" resolve="User" />
+    <node concept="530$P" id="10s9KSwXyWp" role="53OIp">
+      <ref role="530$W" node="XPcdgaujBw" resolve="User" />
+    </node>
+    <node concept="53End" id="10s9KSwXyWq" role="53Em2">
+      <property role="52Chs" value="XPcdgavV8n/PATH" />
+      <property role="TrG5h" value="id" />
+      <node concept="53xMt" id="10s9KSwXyWr" role="53En8">
+        <node concept="3uibUv" id="10s9KSwXyWs" role="53xM4">
+          <ref role="3uigEE" to="33ny:~UUID" resolve="UUID" />
+        </node>
+      </node>
+    </node>
+    <node concept="53Jhq" id="10s9KSwXyWt" role="53Jhz">
+      <ref role="53Jh7" node="10s9KSwXyWq" resolve="id" />
+    </node>
+  </node>
+  <node concept="530$U" id="10s9KSwXyWz">
+    <property role="TrG5h" value="DeleteUserById" />
+    <property role="53Jhx" value="XPcdgauWiz/DELETE" />
+    <property role="3GE5qa" value="user" />
+    <ref role="52GSE" node="XPcdgaujBw" resolve="User" />
+    <node concept="53End" id="10s9KSwXyW$" role="53Em2">
+      <property role="52Chs" value="XPcdgavV8n/PATH" />
+      <property role="TrG5h" value="id" />
+      <node concept="53xMt" id="10s9KSwXyW_" role="53En8">
+        <node concept="3uibUv" id="10s9KSwXyWA" role="53xM4">
+          <ref role="3uigEE" to="33ny:~UUID" resolve="UUID" />
+        </node>
+      </node>
+    </node>
+    <node concept="53Jhq" id="10s9KSwXyWB" role="53Jhz">
+      <ref role="53Jh7" node="10s9KSwXyW$" resolve="id" />
     </node>
   </node>
 </model>
