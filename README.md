@@ -20,3 +20,4 @@ will see a new language shown:
 ![OpenAPI Language](./docs/NewOpenAPILanguage.png)
 
 ## Usage
+Who reads documents nowadays? Just watch this [short video](https://youtu.be/dZc_NI0GCN4) instead!
